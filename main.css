@@ -66,6 +66,7 @@ body {
     width: 100%;
     justify-content: space-around;
     align-items: center;
+    left: 0;
 }
 .profile-container {
     display: flex;
@@ -101,9 +102,9 @@ body {
 .history-container {
     display: flex;
     flex-direction: column;
-    align-self: flex-start;
     justify-content: center;
     padding: 10px;
+    width: 250px;
     background-color: #363a4f;
     margin: auto;
     margin-top: 25px;
@@ -111,25 +112,62 @@ body {
     transition: all 0.3s;
     border-radius: 15px;
     color: aliceblue;
-    padding-right: 250px;
 }
-.history-container:hover {
-    flex-grow: 0.1;
+.solarinfo {
+    display: flex;
+    color: aliceblue;
+    font-weight: normal;
+    flex-direction: column;
+    align-items: center;
+    background-color: #24273a;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 5px;
 }
-.history-text {
+.solarinfo li:hover {
+    text-decoration: underline;
+}
+.history-solar {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 12px;
+    flex-direction: column;
     color: aliceblue;
     font-weight: normal;
-    visibility: hidden;
+    margin-left: 30px;
+}
+.hybrisinfo {
+    display: flex;
+    color: aliceblue;
+    font-weight: normal;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #24273a;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.hybrisinfo li:hover {
+    text-decoration: underline;
+}
+.history-hybris {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    font-weight: normal;
+    padding: 5px;
+    margin-left: 30px;
 }
 .about-container {
     display: flex;
-    align-self: flex-start;
-    justify-content: center;
+    align-self: flex-end;
+    justify-content: end;
+    flex-direction: column;
     padding: 10px;
+    width: 250px;
     background-color: #363a4f;
     margin: auto;
     margin-top: 25px;
@@ -137,12 +175,87 @@ body {
     transition: all 0.3s;
     border-radius: 15px;
     color: aliceblue;
-    padding-left: 250px;
+    left: 0;
 }
-.about-container:hover {
-    flex-grow: 0.1;
+.about-text {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    color: aliceblue;
+    font-weight: normal;
+}
+.more-container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(7px);
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+.more-solarinfo {
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #363a4f;
+    padding: 50px;
+    border-radius: 15px;
+    color: aliceblue;
+    flex-direction: column;
+    margin: auto;
+}
+.more-solarinfo-icon {
+    display: flex;
+    content: url(assets/solarlogo.png);
+}
+.more-solarinfo-name {
+    display: flex;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 50px;
+}
+.more-solarinfo-about {
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
 }
 
+.more-hybrisinfo {
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #363a4f;
+    padding: 50px;
+    border-radius: 15px;
+    color: aliceblue;
+    flex-direction: column;
+    margin: auto;
+}
+.more-hybrisinfo-icon {
+    display: flex;
+    content: url(assets/hybrislogo.png);
+}
+.more-hybrisinfo-name {
+    display: flex;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 50px;
+}
+.more-hybrisinfo-about {
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
 
 @media only screen and (max-width: 1200px) {
     .history-container {
