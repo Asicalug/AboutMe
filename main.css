@@ -59,8 +59,10 @@ body {
     flex-grow: 0.1;
     margin-left: 5px;
 }
+
 .info-container-pc {
     display: flex;
+    opacity: 1;
     position: fixed;
     align-items: center;
     justify-content: center;
@@ -68,31 +70,36 @@ body {
     border-radius: 15px;
     padding: 30px;
     width: 25%;
-    background-color: #363a4f;
     top: 90px;
     bottom: 10px;
+    background-color: #363a4f;
+    transition: all 0.3s;
 } 
 .info-container-mobile {
-    display: none;
+    display: flex;
+    opacity: 0;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-evenly;
     border-radius: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 100%;
     background-color: #363a4f;
     margin-top: 10px;
+    transition: all 0.3s;
 }
 .profile-pfp {
     display: flex;
-    content: url(assets/Untitled.png);
+    content: url(https://cdn.discordapp.com/avatars/1080643375960707092/60552ebf7a43549c9a01b80ea8654d79.webp?size=1024&width=0&height=1024);
+    height: 128px;
+    border-radius: 100px;
 }
 .profile-name {
     display: flex;
     color: aliceblue;
     font-size: 50px;
     font-weight: 600;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 .profile-hobby {
     display: flex;
@@ -100,6 +107,16 @@ body {
     padding: 10px;
     font-size: 15px;
     font-weight: normal;
+}
+.about-container {
+    display: flex;
+    right: 1px;
+    position: fixed;
+    background-color: #363a4f;
+    width: 65%;
+    border-radius: 15px;
+    top: 90px;
+    bottom: 10px;
 }
 .more-container {
     display: none;
@@ -111,7 +128,7 @@ body {
     right: 0;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s;
+    transition: all 0.9s;
 }
 .more-solarinfo {
     display: none;
@@ -175,9 +192,13 @@ body {
 
 @media only screen and (max-width: 840px) {
     .info-container-pc {
-        display: none;
+        opacity: 0;
+        bottom: 75%;
     }
     .info-container-mobile {
-        display: flex;
+        opacity: 1;
+        width: 60%;
+        padding-left: 20%;
+        padding-right: 20%;
     }
 }
