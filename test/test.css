@@ -9,6 +9,7 @@ body {
     font-family: DM Sans;
     font-size: large;
     font-weight: 700;
+    background-image: url(../assets/282.jpg);
 }
 
 
@@ -27,6 +28,12 @@ body {
     color: var(--text-color);
     transition: all 0.3s;
     animation: 1.5s ease-out 0s 1 slideFromTop;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .navbar-title {
@@ -69,8 +76,18 @@ body {
     margin-top: 35vh;
     margin-left: 95px;
     max-width: 75%;
+    padding: 10px;
     width: fit-content;
     color: var(--text-color);
+
+    animation: 1.50s ease-out 0s 1 slideFromLeft;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .content-title {
