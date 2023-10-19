@@ -87,8 +87,10 @@ body {
 }
 .profile-pfp {
     display: flex;
-    content: url(https://cdn.discordapp.com/avatars/1080643375960707092/60552ebf7a43549c9a01b80ea8654d79.webp?size=1024&width=0&height=1024);
+    content: url(https://cdn.discordapp.com/avatars/1080643375960707092/60552ebf7a43549c9a01b80ea8654d79.webp?size=1024&width=0&height=32);
     height: 128px;
+    width: 32px;
+    height: 32px;
     border-radius: 100px;
 }
 .profile-name {
