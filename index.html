@@ -1,97 +1,42 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="main.css">
-<link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet", href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Asicalug</title>
+</head>
 <body>
+    <glow style="top: 0; right: 0;"></glow>
+    <glow style="bottom: 0; left: 0;"></glow>
 
-    <div class="navbar-container">
-        <div class="navbar-projects">
-            Projects
+    <div class="navbar" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="0">
+        <div class="nav-button-container">
+            <button class="nav-buttons" onclick='location.href = "#portfolio"' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Portfolio</button>
+            <button class="nav-buttons" onclick='location.href = "#projects"' data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="200">Projects</button>
+            <button class="nav-buttons" onclick='location.href = "#socials"' data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">Socials</button>
         </div>
-        <div class="navbar-about">
-            About
-        </div>
-        <div class="navbar-contacts">
-            Contacts
+    </div>
+    <div id="portfolio" class="section">
+        <div class="portfolio-text">
+            <h1  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">Asicalug</h1>
+            <div class="hor-separator" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="700"></div>
+            <h3 data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1050">a beginner developer from Belgium who loves gaming, especially Rocket League. 🎮🚀</h3>
         </div>
     </div>
 
-    <div class="info-container-pc">
-        <div class="profile-pfp">
-            </div>
+    <div id="projects" class="section"></div>
 
-        <div class="profile-name">
-            Asicalug
-        </div>
+    <expandpage></expandpage>
 
-        <div class="profile-hobby">
-            Hobby programmer/gamer
-        </div>
-    </div>
-    <div class="info-container-mobile">
-        <div class="profile-pfp">
-
-        </div>
-
-        <div class="profile-name">
-            Asicalug
-            <div class="profile-hobby">
-                Hobby programmer/gamer
-            </div>
-        </div>
-    </div>
-
-    <div class="about-container">
-        <div class="about-bio">
-            Hello, I'm Asicalug, a 13 year old hobby programer from Belgium. 
-            <br>I have always preferred to learn languages through doing.
-            <br>At the age of 12, I started creating Discord bots in python which marked 
-            <br>the beginning of my programming hobby.
-            <br>My main area of interest throughout the years has been Python
-        </div>
-    </div>
-    
-    </div>
-
-    <div class="more-container">
-        <div class="more-solarinfo">
-            <div class="more-solarinfo-icon"></div>
-
-            <div class="more-solarinfo-name">Solar Tweaks</div>
-
-            <div class="more-solarinfo-icon-about">
-                This software was a tool to<br>
-                modify the popular Minecraft PvP client,<br>
-                Lunar Client.<br>
-                It has sadly been Cease & Desist by<br>
-                the owners of Lunar Client.<br>
-                This tool had a big impact on the Cracked<br>
-                community because it could allow cracked<br>
-                account users to use it. <br>
-                <br>
-                The client will sadly never return.
-                <br>
-                <a href="https://github.com/Solar-Tweaks" style="color: aqua;">More Info</a>
-            </div>
-        </div>
-
-        <div class="more-hybrisinfo">
-            <div class="more-hybrisinfo-icon"></div>
-
-            <div class="more-hybrisinfo-name">HybrisMC</div>
-
-            <div class="more-hybrisinfo-icon-about">
-                This will be a new and unique client that will be open source
-                <br>
-                <a href="https://github.com/HybrisMC" style="color: aqua;">More Info</a><br>
-                <a href="https://discord.gg/hybris-926918030385098764" style="color: aqua;">The Discord</a>
-            </div>
-        </div>
-    </div>
-
-    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
